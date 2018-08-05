@@ -1,24 +1,25 @@
-# README
+# Ruby on Rail tutorial Sample app
+## Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get started with the app, clone the repo and then install the needed rubygems
 
-Things you may want to cover:
+```
+$ bundle install --without production
+```
+Next, migrate the database:
 
-* Ruby version
+```
+$ rails db: migrate
+```
 
-* System dependencies
+Finally, run the test suite to verify that everyting is working correctly:
 
-* Configuration
+```
+$ rails test
+```
 
-* Database creation
+If the test suite passes, you'll be ready to run the app in a local server:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails server
+```
